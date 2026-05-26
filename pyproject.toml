@@ -1,0 +1,23 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name        = "keepin"
+version     = "0.1.0"
+description = "Pinterest pin backup and sync — keeps your pins safe forever"
+requires-python = ">=3.11"
+license     = { text = "MIT" }
+dependencies = [
+    "requests>=2.31",
+]
+
+[project.scripts]
+keepin = "keepin.cli:main"
+
+[project.optional-dependencies]
+dev = ["ruff", "mypy", "types-requests"]
+
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["keepin*"]

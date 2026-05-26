@@ -1,0 +1,28 @@
+[pinterest]
+# Your Pinterest session cookie.
+# How to get it:
+#   1. Log into pinterest.com in your browser
+#   2. Press F12 -> Application -> Cookies -> https://www.pinterest.com
+#   3. Find _pinterest_sess and copy its Value
+session_cookie = "PASTE_YOUR_SESSION_COOKIE_HERE"
+
+# Your Pinterest username (the part after pinterest.com/ in your profile URL)
+username = "your_pinterest_username"
+
+[storage]
+# Where to save pins. Relative paths resolve from this config file's directory.
+# Examples: "pins"  |  "/home/user/Pinterest"  |  "~/Pinterest"
+output_dir = "pins"
+
+# How to organise files:
+#   "board" - one sub-folder per board (default)
+#   "flat"  - everything in output_dir
+organize_by = "board"
+
+[sync]
+# Seconds between syncs when running in daemon mode.
+# 3600 = 1 hour  |  1800 = 30 min  |  86400 = 1 day
+interval = 3600
+
+# Parallel download workers (increase if you have fast internet)
+workers = 4

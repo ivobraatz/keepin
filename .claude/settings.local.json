@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem D:\\\\Projetos\\\\GitHub\\\\keepin *)",
+      "PowerShell(Get-ChildItem \"D:\\\\Projetos\\\\GitHub\\\\keepin\" -Recurse | Where-Object { $_.FullName -notmatch \"\\\\.git|__pycache__|\\\\.egg-info\" } | Select-Object FullName)",
+      "PowerShell(keepin *)",
+      "PowerShell(Get-ChildItem \"D:\\\\Projetos\\\\GitHub\\\\keepin\" | ForEach-Object { $_.Name })",
+      "PowerShell(keepin sync *)",
+      "PowerShell(Get-ChildItem \"D:\\\\Projetos\\\\GitHub\\\\keepin\\\\pins\" -Recurse | Where-Object {!$_.PSIsContainer} | Measure-Object | Format-List Count)"
+    ]
+  }
+}
