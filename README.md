@@ -24,7 +24,7 @@ State is tracked in a SQLite database so pins are never downloaded twice. Files 
 ## Installation
 
 ```
-git clone https://github.com/yourusername/keepin
+git clone https://github.com/ivobraatz/keepin
 cd keepin
 pip install -e .
 ```
